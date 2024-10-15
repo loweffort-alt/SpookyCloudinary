@@ -1,0 +1,32 @@
+---
+import Navbar from "../components/Home/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Home/Hero.astro";
+import Form from "../components/Home/Form.astro";
+import Advantages from "../components/Home/Advantages.astro";
+import Banner from "../components/Home/Banner.astro";
+import Services from "../components/Home/Services.astro";
+import Tech from "../components/Home/Tech.astro";
+import CallToAction from "../components/Home/CallToAction.astro";
+import Footer from "../components/Home/Footer.astro";
+import BackLines from "../components/BackLines.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <BackLines />
+  <Navbar />
+  <div
+    class="w-10 h-10 max-sm:bg-red-300 max-md:bg-blue-300 max-lg:bg-green-300 lg:bg-yellow-300 fixed"
+  >
+  </div>
+  <main class="margin-container transition-all">
+    <Hero />
+    <Form />
+    <Advantages />
+    <Banner />
+    <Services />
+    <Tech />
+    <CallToAction />
+    <Footer />
+  </main>
+</Layout>

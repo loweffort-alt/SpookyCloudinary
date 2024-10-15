@@ -1,0 +1,130 @@
+<section
+  class="fixed h-screen -z-20 grid grid-cols-2 w-2/5 left-1/2 -translate-x-1/2"
+>
+  <div class="h-screen absolute w-1 bg-gray-200">
+    <div class="moving-down bg-red-500" id="div1"></div>
+    <div class="moving-down bg-red-950" id="div2"></div>
+    <div class="moving-down bg-red-500" id="div3"></div>
+    <div class="moving-down bg-red-950" id="div4">
+      <div class="w-full h-full translate-y-[calc(400%)] bg-red-500 dummy-line">
+        <div
+          class="w-full h-full translate-y-[calc(400%)] bg-red-950 dummy-line"
+        >
+          <div
+            class="w-full h-full translate-y-[calc(400%)] bg-red-500 dummy-line"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="h-screen absolute w-1 bg-gray-200 justify-self-end">
+    <div class="moving-up bg-red-500" id="div5"></div>
+    <div class="moving-up bg-red-950" id="div6"></div>
+    <div class="moving-up bg-red-500" id="div7"></div>
+    <div class="moving-up bg-red-950" id="div8">
+      <div
+        class="w-full h-full -translate-y-[calc(400%)] bg-red-500 dummy-line"
+      >
+        <div
+          class="w-full h-full -translate-y-[calc(400%)] bg-red-950 dummy-line"
+        >
+          <div
+            class="w-full h-full -translate-y-[calc(400%)] bg-red-500 dummy-line"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .dummy-line {
+    animation: hideLine 7s forwards;
+  }
+
+  @keyframes hideLine {
+    100% {
+      visibility: hidden;
+    }
+  }
+
+  .moving-down {
+    width: 100%;
+    height: 3.75rem;
+    position: absolute;
+    left: 0;
+    top: -3.75rem;
+    animation: moveDown 8s linear infinite forwards;
+  }
+
+  #div1 {
+    animation-delay: 6s; /* Sin retraso */
+  }
+
+  #div2 {
+    animation-delay: 4s; /* Retraso para que siga al div1 */
+  }
+
+  #div3 {
+    animation-delay: 2s; /* Retraso para que siga al div2 */
+  }
+
+  #div4 {
+    animation-delay: 0s; /* Retraso para que siga al div2 */
+  }
+
+  /* Animación */
+  @keyframes moveDown {
+    0% {
+      transform: translateY(
+        -3.75rem
+      ); /* Empieza justo fuera y encima de la pantalla */
+    }
+    100% {
+      transform: translateY(
+        calc(100vh + 3.75rem) /* calc(100vh + 3.75rem) */
+      ); /* Se mueve a la parte superior */
+    }
+  }
+
+  .moving-up {
+    width: 100%;
+    height: 3.75rem;
+    position: absolute;
+    left: 0;
+    bottom: -3.75rem;
+    animation: moveUp 12s linear infinite;
+  }
+
+  #div5 {
+    animation-delay: 9s; /* Sin retraso */
+  }
+
+  #div6 {
+    animation-delay: 6s; /* Retraso para que siga al div5 */
+  }
+
+  #div7 {
+    animation-delay: 3s; /* Retraso para que siga al div6 */
+  }
+
+  #div8 {
+    animation-delay: 0s; /* Retraso para que siga al div7 */
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: translateY(
+        3.75rem
+      ); /* Empieza justo fuera y debajo de la pantalla */
+    }
+    100% {
+      transform: translateY(
+        calc(-100vh - 3.75rem)
+      ); /* Se mueve a la parte superior */
+    }
+  }
+</style>

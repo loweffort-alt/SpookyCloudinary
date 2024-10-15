@@ -1,0 +1,40 @@
+---
+import IconContainer from "../Utils/IconContainer.astro";
+---
+
+<section
+  class="w-full max-h-[744px] py-8 grid grid-cols-1 items-center max-md:text-center md:grid-cols-2"
+>
+  <div class="flex flex-col justify-evenly max-h-[744px] gap-y-5">
+    <div>
+      <h4 class="text-secondary mb-2 max-md:font-semibold">
+        /TODO TIPO DE MARCAS Y MODELOS
+      </h4>
+      <h1 class="text-primary max-sm:text-[3.25rem]">
+        Servicio de <span class="text-secondary">Mantenimiento</span> y <span
+          class="text-secondary">Reparaciones</span
+        > Automotriz
+      </h1>
+    </div>
+    <p>
+      Taller privado, sala de espera cómoda, servicio a domicilio, historial de
+      reparaciones y seguimiento en tiempo real. ¡Descubre la excelencia con
+      nosotros!
+    </p>
+    <ul
+      class="max-sm:px-10 flex max-md:flex-wrap gap-8 max-md:justify-center *:flex *:flex-col *:items-center *:gap-y-2 *:w-24 z-20"
+    >
+      <IconContainer description="Mantenimiento General" icon="Wrench" />
+      <IconContainer description="Planchado y Pintura" icon="Painting" />
+      <IconContainer description="Servicio Eléctrico" icon="Idea" />
+      <IconContainer description="Reparación de Motor" icon="Engine" />
+    </ul>
+  </div>
+  <div class="max-h-[744px] relative max-md:hidden">
+    <img
+      src="hero-optimized.webp"
+      alt="hero-image"
+      class="max-w-[1200px] -translate-x-5"
+    />
+  </div>
+</section>

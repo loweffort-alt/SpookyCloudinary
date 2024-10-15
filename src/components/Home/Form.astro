@@ -1,0 +1,65 @@
+---
+import ArrowDown from "../Utils/Icons/ArrowDown.astro";
+---
+
+<section class="my-8">
+  <ArrowDown />
+  <div
+    class="h-full py-8 px-4 gap-8 md:px-8 bg-primary grid items-center md:grid-cols-2 rounded-2xl"
+  >
+    <div class="flex gap-8 flex-col text-background">
+      <div>
+        <h4>Ingresa tus datos</h4>
+        <h2 class="max-md:text-center mt-2">
+          Nuestros expertos se comunicarán contigo.
+        </h2>
+      </div>
+      <ul class="flex flex-wrap gap-x-8 gap-y-4 text-sm font-light">
+        <li>Estandarización de <span>Precios</span></li>
+        <li>Experiencia asegurada en <span>Multimarcas</span></li>
+        <li>Monitoreo de trabajos en <span>Tiempo Real</span></li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-8">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 *:w-full *:rounded-md"
+      >
+        <div class="px-4 py-2 bg-white">Nombre Completo</div>
+        <div class="px-4 py-2 bg-white">Celular</div>
+        <div class="px-4 py-2 bg-white">Empresa</div>
+        <div class="px-4 py-2 bg-white">Correo Empresarial</div>
+      </div>
+      <div>
+        <div class="flex gap-4 items-center mb-4">
+          <div class="min-w-4 min-h-4 bg-background rounded-sm"></div>
+          <p class="text-small leading-none text-background">
+            Al hacer click en enviar, aceptas las Políticas de Datos Personales
+            y las Políticas de Servicios en Fana.
+          </p>
+        </div>
+        <button class="w-full py-2 bg-secondary rounded-md text-background"
+          >Enviar</button
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Titillium Web", sans-serif;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Titillium Web", sans-serif;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+</style>

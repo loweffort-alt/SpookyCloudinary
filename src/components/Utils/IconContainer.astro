@@ -1,0 +1,29 @@
+---
+const { description, icon } = Astro.props;
+import Wrench from "./Icons/Wrench.astro";
+import Painting from "./Icons/Painting.astro";
+import Idea from "./Icons/Idea.astro";
+import Engine from "./Icons/Engine.astro";
+---
+
+<li>
+  <div
+    class="w-16 h-16 flex justify-center items-center rounded-full bg-primary drop-shadow"
+  >
+    {icon === "Wrench" && <Wrench />}
+    {icon === "Painting" && <Painting />}
+    {icon === "Idea" && <Idea />}
+    {icon === "Engine" && <Engine />}
+  </div>
+  <p class="small_text text-center text-primary">{description}</p>
+</li>
+
+<style>
+  .small_text {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    line-height: 1.25;
+    letter-spacing: 0.031rem;
+  }
+</style>

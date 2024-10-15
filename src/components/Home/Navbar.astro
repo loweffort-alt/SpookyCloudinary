@@ -1,0 +1,26 @@
+---
+import Menu from "../Utils/Icons/Menu.astro";
+---
+
+<nav
+  class="flex justify-between items-center h-16 py-2 relative bg-background drop-shadow-md lg:px-16 md:px-12 sm:px-8 max-sm:px-4"
+>
+  <img src="Logo.svg" alt="logo" class="h-8 cursor-pointer max-md:h-7" />
+  <ul
+    class="w-1/3 flex justify-between font-semibold text-text *:transition-all *:cursor-pointer max-lap:hidden"
+  >
+    <li class="hover:text-secondary">Inicio</li>
+    <li class="hover:text-secondary">Servicios</li>
+    <li class="hover:text-secondary">Software</li>
+    <li class="hover:text-secondary">Blog</li>
+    <li class="hover:text-secondary">Nosotros</li>
+  </ul>
+  <div class="flex items-center justify-self-end">
+    <button
+      class="py-3 px-6 rounded-lg bg-secondary font-semibold text-white hover:bg-red-600 hover:scale-105 transition max-md:scale-90"
+    >
+      Agenda tu cita
+    </button>
+    <Menu />
+  </div>
+</nav>
