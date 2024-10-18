@@ -1,0 +1,48 @@
+---
+import { CldUploadWidget } from "astro-cloudinary";
+import Menu from "../Utils/Icons/Menu.astro";
+---
+
+<aside
+  class="group fixed top-1/2 left-0 transform -translate-y-1/2 bg-[#5d5c8780] text-white transition-all duration-300 min-h-min hover:w-48 w-16 flex flex-col items-center py-4"
+>
+  <!-- Sidebar Logo -->
+  <div class="mb-6">
+    <img src="/Logo.svg" alt="logo" class="h-8 cursor-pointer max-md:h-7" />
+  </div>
+
+  <!-- Sidebar Items -->
+  <ul class="space-y-4">
+    <!-- Item 1 -->
+    <li class="flex items-center space-x-2">
+      <a href="/" class="flex items-center">
+        <img src="/Logo.svg" alt="Basic Customization" class="h-6" />
+        <span class="ml-2 hidden group-hover:inline-block hover:text-primary">Basic Customization</span>
+      </a>
+    </li>
+    
+    <!-- Item 2 -->
+    <li class="flex items-center space-x-2">
+      <a href="/" class="flex items-center">
+        <img src="/Logo.svg" alt="Phobia Generator" class="h-6" />
+        <span class="ml-2 hidden group-hover:inline-block hover:text-primary">Phobia Generator</span>
+      </a>
+    </li>
+
+    <!-- Item 3 -->
+    <li class="flex items-center space-x-2">
+      <a href="/" class="flex items-center">
+        <img src="/Logo.svg" alt="Spooky Storytelling" class="h-6" />
+        <span class="ml-2 hidden group-hover:inline-block hover:text-primary">Spooky Storytelling</span>
+      </a>
+    </li>
+
+    <!-- Item 4 -->
+    <li class="flex items-center space-x-2">
+      <a href="/" class="flex items-center">
+        <img src="/Logo.svg" alt="Other features" class="h-6" />
+        <span class="ml-2 hidden group-hover:inline-block hover:text-primary">Other features</span>
+      </a>
+    </li>
+  </ul>
+</aside>

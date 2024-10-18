@@ -1,0 +1,31 @@
+---
+import Card from "../Card.astro";
+import ArrowDown from "../Utils/Icons/ArrowDown.astro";
+
+
+---
+
+<section class="flex justify-center">
+    <ArrowDown />
+    <div class="flex flex-col">
+        <h1 class="text-primary py-16 text-center">Main Features</h1>
+        <div class="grid grid-cols-3 gap-4">
+            <Card
+                featureName="Basic Customization"
+                description="Upload an image of yours and customize the background with creative prompts."
+            />
+            <Card
+                featureName="Basic Customization"
+                description="Upload an image of yours and customize the background with creative prompts."
+            />
+            <Card
+                featureName="Basic Customization"
+                description="Upload an image of yours and customize the background with creative prompts."
+            />
+            <Card
+                featureName="Basic Customization"
+                description="Upload an image of yours and customize the background with creative prompts."
+            />
+        </div>
+    </div>
+</section>

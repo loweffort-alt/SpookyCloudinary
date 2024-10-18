@@ -1,7 +1,6 @@
 html {
   font-family: system-ui, sans-serif;
-  background-color: #171717;
-  background-image: radial-gradient(ellipse 40% 200% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+  background-color: #010103;
   color: #030607;
   font-size: 16px;
   overflow-x: hidden;
